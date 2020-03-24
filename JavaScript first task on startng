@@ -1,0 +1,21 @@
+<script type="text/JavaScript>
+
+var myOwnName = "Odumosu Oluwapelumi Ayomide";
+
+var myStartNgCourses = ["HTML" , "CSS" , "JavaScript"];
+
+document.write("Name: ", myOwnName);
+
+document.write("<br><br>");
+
+document.write("Courses: ", myStartNgCourses + "<br><br>");
+
+document.write("Odd Numbers From 1-200(inclusive of my course number): <br>");
+
+for (i=0; i<=200; i++){
+	 if(i%2 !== 0){
+	 	  document.write(i + "<br>");
+	 };
+};
+
+</script>
