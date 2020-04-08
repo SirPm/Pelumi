@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>js second task</title>
+	</head>
+	<body>
+		
+		<script>
+			
+			let data = [ 
+			
+			{principal: 2500, time: 1.8},
+			{principal: 1000, time: 5},
+			{principal: 3000, time: 1},
+			{principal: 2000, time: 3}
+			
+			];
+		 	 
+ 
+function interestCalculator(array){
+	  
+// for loop to iterate over the "data" array of object and assign a rate if it fulfils a condition and calculate the interest in the process, then eventually assigning the rate and intetest obtained to the "data" array of objects
+	  
+	 for(i = 0; i < data.length; i++){
+	 
+	 	if(data[i].principal >= 2500 && data[i].time > 1 && data[i].time < 3){
+	
+		let rate = 3;
+		
+	 	let interest = ( (data[i].principal) * (data[i].time) * (rate) ) / 100;
+	 	
+	 	Object.assign(data[i], {rate: rate}, {interest: interest});
+	 	
+	 	}
+	 	
+	 	else if(data[i].principal >= 2500 && data[i].time >= 3){
+	 		let rate = 4;
+	 		
+	 		let interest = ( (data[i].principal) * (data[i].time) * (rate) ) / 100;
+	 	
+	 	Object.assign(data[i], {rate: rate}, {interest: interest});
+	 	
+	 	}
+	 	
+	 	else if(data[i].principal < 2500 || data[i].time <= 1){
+	 		 let rate = 2;
+	 		 
+	 		 let interest = ( (data[i].principal) * (data[i].time) * (rate) ) / 100;
+	 	
+	 	Object.assign(data[i], {rate: rate}, {interest: interest});
+	 	
+	 	}
+	 	
+	 	else{
+	 		 let rate = 1;
+	 		 
+	 		 let interest = ( (data[i].principal) * (data[i].time) * (rate) ) / 100;
+	 	
+	 	Object.assign(data[i], {rate: rate}, {interest: interest});
+	 	
+	 	}
+	}
+		 
+// putting the principal, rate, time and intetest into objects to be pushed later into array "interestData" to give me a new array of objects containing all the values both given and calculated
+		 
+		let object1 = {principal: data[0].principal, rate: data[0].rate, time: data[0].time, interest: data[0].interest};
+		
+		let object2 = {principal: data[1].principal, rate: data[1].rate, time: data[1].time, interest: data[1].interest};
+		
+	let object3 = 	{principal: data[2].principal, rate: data[2].rate, time: data[2].time, interest: data[2].interest};
+		
+	let object4 = 	{principal: data[3].principal, rate: data[3].rate, time: data[3].time, interest: data[3].interest};
+		
+
+let interestData = [];
+
+ interestData.push(object1, object2, object3, object4);
+ 
+//this loop is to go through the new array of object and make both the key and value pair of the individual objects to show when logged to the console
+ 
+for(k = 0; k < interestData.length; k++){
+	 for(let key in interestData[k]){
+	 	 console.log(key + " : " + interestData[k][key] + " " + "<br>")
+	 }
+}
+	 
+	 return interestData;
+		 
+};
+  
+  
+  interestCalculator(data);
+  
+  
+		</script>
+		
+	</body>
+</html>
