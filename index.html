@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		
+		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+		
+		<title>Third HTML Task</title>
+		
+		<style>
+			body *{
+	 margin: 0;
+	 padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+#body-border{
+	border: 1px solid grey;
+}
+
+#header-image{
+	height: 200px;
+	width: 100%;
+	size: 100px;
+}
+
+h1{
+	 text-transform: uppercase;
+	 font-family: sans-serif;
+}
+
+header{
+	 background-image: linear-gradient(#F06916, #F3A40E);
+	 padding-top: 80px;
+}
+
+header h1{
+	 text-align: center;
+	 margin-top: -50px;
+}
+
+
+.biodata-value{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: cursive;
+}
+
+span{
+	text-transform: uppercase;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bolder;
+	font-size: large;
+	text-align: center;
+	font-style: italic;
+	display: block;
+	margin-top: 20px;
+}
+
+/**************************************************
+        THE LEFT SIDE OF THE PAGE
+***************************************************/
+
+
+ #left-side{
+ 	 float: left;
+	 width: 50%;
+	 margin-left: 3%;
+	 background: white;
+ }
+ 
+ .left-h1{
+	 background: #F06916;
+ 	 color: white;
+ 	 text-align: center;
+ 	 padding: 10px;
+ 	 font-size: 15px;
+ 	 margin-top: 20px;
+ }
+ 
+ #summary{
+ 	 margin-top: 20px;
+ }
+
+
+ /**************************************************
+        THE RIGHT SIDE OF THE PAGE
+***************************************************/
+
+#my-pic{
+	max-width: 30%;
+	min-width: 5%;
+	height: auto;
+	border-radius: 250px;
+	border: 3px solid #F3A40E;
+	position: relative;
+	margin-top: -120px;
+	margin-left: 35%;
+}
+
+	#right-side{
+		float: right;
+		width: 38%;
+		padding-top: 150px;
+		padding-bottom: 200px;
+		padding-left: 3%;
+		padding-right: 3%;
+		color: rgb(0, 5, 5);
+		background: #F06916;
+	}
+
+    #name{
+		font-size: medium;
+		font-family: 'Courier New', Courier, monospace;
+		text-align: center;
+        margin-top: 20px;
+	}
+
+	.right-h1{
+		background: white;
+		text-align: center;
+		padding: 10px;
+		font-size: 15px;
+		margin-top: 20px;
+	}
+	
+	#phone{
+		 font-weight: bold;
+		 font-size: small;
+	}
+	
+	#hobbies ul li{
+		 list-style: none;
+		 padding-top: 20px;
+		 text-align: center;
+	}
+	
+	#right-data{
+		 margin-top: 200px;
+	}
+	
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="body-border" class="clearfix">
+			<header>
+				<h1>BIO-DATA</h1>
+			</header>
+			
+		<main>
+				
+				<section id="left-side" class="clearfix">
+					<h1 class="left-h1">Profile</h1>
+					
+						<p class="biodata-value"><span>Slack Id: </span><br>Pelumi </p>
+						
+						<p class="biodata-value"><span>Date of Birth: </span><br> July 21st </p>
+
+						<p class="biodata-value"><span>Occupation: </span><br>Serving Corp Member </p>	
+						
+					<h1 class="left-h1">Residential information</h1>
+						<p class="biodata-value"><span>State of Origin: </span><br> Ogun State </p>
+						
+						<p class="biodata-value"><span>Home town: </span><br>Ososa </p>
+						
+						<p class="biodata-value"><span>Address: </span><br>5, Oloko-Oba Street, Orisumbare Ayobo-Ipaja </p>
+					
+					<h1 class="left-h1">Summary</h1>
+						<p class="biodata-value" id="summary">I'm a cool guy my hobbies are singing and writing. Though I have interests in art, poetry to be precise </p>
+				</section>
+			
+				<section id="right-side" class="clearfix">
+					<img src="images/pm.jpg" alt="my-pic" id="my-pic">
+				
+						<h1 id="name">Odumosu Oluwapelumi</h1>
+						
+						<div>
+							<h1 class="right-h1">Contact</h1>
+							<p class="biodata-value"><span>Hotline:</span><br><em id="phone"> +2348069233535</em></p>
+							<p class="biodata-value "><span>Work Address: </span><br>GDSS Hamma'Ali, Kware LGA, Sokoto State</p>
+						
+						</div>
+						<div>
+							<h1 class="right-h1">Hobbies</h1>
+							<div id="hobbies">
+							 <ul>
+							 	 <li>Singing</li>
+							 	 <li>Writing</li>
+							 	 <li>Gaming</li>
+							 </ul>
+							</div>
+							
+						</div>
+					
+				</section>
+			
+			</main>
+		</div>	
+	</body>
+</html>
