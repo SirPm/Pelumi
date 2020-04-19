@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>Third JS Task</title>
+	</head>
+	
+	<body>
+		<script>
+			
+			function checkNum (number) {
+				
+				let myArray = [];
+			
+			    let d = number;
+			
+			    	for (i = 1; i <= d; i++) {
+				    	if (i % 2 == 0) {
+				  
+				  	    	if (i % 2 == 0 && i % 3 == 0) {
+				 	 	 
+				 	 	    	if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+				 	 	        	let i = " \"yu-gi-oh\" ";
+				 	            	myArray.push(i);
+				 	 	         }
+				 	 	  
+				 	 	        else {
+				 	 	 	    	let i = " \"yu-gi\" ";
+				 	            	myArray.push(i);
+				 	 	         }
+				 	         }
+				 	 
+				 	    else if (i % 2 == 0 && i % 5 == 0) {
+				 	 	 		let i = " \"yu-oh\" ";
+				 	 			myArray.push(i);
+				 	 	 }
+				 	 
+				 	    else{
+				 	    	let i = " \"yu\" ";
+				 	        myArray.push(i);
+				 	     }
+				        }
+				 
+				        else if(i % 3 == 0){
+
+				 	    	if(i % 3 == 0 && i % 5 == 0){
+				 	 	    	let i = " \"gi-oh\" ";
+				 	 	    	myArray.push(i);
+				 	         }
+				 	    else{
+				 	 		let i = " \"gi\" ";
+				 	 	    myArray.push(i);
+				 	     }
+				        }
+				 
+				        else if(i % 5 == 0){
+				 	    	let i = " \"oh\" ";
+				 	        myArray.push(i);
+				         }
+				 
+				        else{
+				 	    	myArray.push(i);
+				         }
+			        }
+			
+				return myArray;
+				
+			}
+			
+			console.log(checkNum(100));
+			
+			
+			console.log(checkNum(21));
+			
+		</script>
+	</body>
+</html>
